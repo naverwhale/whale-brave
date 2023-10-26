@@ -1,0 +1,17 @@
+# Copyright (c) 2023 NAVER Corp. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+source_set("tracking_blockers") {
+  sources = [
+    "tracking_blockers_util.cc",
+    "tracking_blockers_util.h",
+  ]
+
+  deps = [
+    "//components/content_settings/core/browser",
+    "//components/content_settings/core/common",
+    "//third_party/abseil-cpp:absl",
+    "//url:url",
+  ]
+}
